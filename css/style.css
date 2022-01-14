@@ -1,0 +1,242 @@
+/* common styles for whole html file  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    background-color: #E5E5E5;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: white;
+    width: 870px;
+    margin-top: 36px;
+    border-radius: 5px;
+}
+hr{
+    width: 807px;
+    border: 1px solid #D1D1D1;
+    margin-top: 25px;
+}
+footer{
+    background-color: #562EFF;
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+/*---------------------- 
+    nav-bar styles 
+------------------------- */
+header{
+    margin: 0;
+    height: 94px;
+    padding: 20px 0px;
+    background-color: #562EFF;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    width: 40.42px;
+    height: 51px;
+    margin-left: 285px;
+}
+.logo-name{
+    font-size: 24px;
+    color: white;
+    margin: 13px 0px 5px 15px;
+    align-items: center;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar li{
+    list-style: none;
+}
+.nav-bar a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    margin-left: 36px;
+}
+.link{
+    display: flex;
+    margin: 15px 0;
+}
+.profile{
+    margin-right: 285px;
+}
+.profile img{
+    width: 51px;
+    height: 51px;
+}
+/* navbar styles ends here  */
+
+/* ---------------------------------------------------
+    Top Player and Top Blogs section starts from here  
+-----------------------------------------------------*/
+.title{
+    font-size: 24px;
+    font-weight: 500;
+    color: #562EFF;
+}
+.title,.top-players{
+    margin-left: 30px;
+}
+.top-players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 29px;
+}
+.top-players img{
+    width: 56px;
+    height: 56px;
+}
+.player{
+    display: flex;
+}
+.player h3{
+    margin: 16px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/*-------------------------------------
+    top-blogs styles start from here 
+--------------------------------------- */
+.top-blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px;
+    margin-bottom: 42px;
+}
+.blog{
+    display: flex;
+}
+.thumbnil img{
+    width: 177px;
+    height: 117px;
+    margin-left: 30px;
+}
+.blog-info{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.blog-info h3{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.blog-info p{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 16px;
+}
+.author{
+    color: #562EFF;
+}
+.author span{
+    color: #9F9F9F;
+}
+/*-------------------------------------
+    Latest-courses styles start from here 
+--------------------------------------- */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.course{
+    padding-left: 20px;
+    padding: 20px;
+    height: 270px;
+    width: 252px;
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+}
+.course img{
+    width: 224px;
+    height: 104px;
+}
+.course-info p{
+    color: #ED6B4F;
+}
+.rating-duration{
+    display: flex;
+    justify-content: space-between;
+}
+.rating span{
+    font-size: 14px;
+    color: #A2A2A2;
+}
+.fa-star.filled{
+    color: #FFC014;
+    font-size: 12px;
+}
+.fa-star.empty{
+    font-size: 12px;
+}
+.duration{
+    background: #FFE4E8;
+    border-radius: 15px;
+    padding: 5px;
+}
+.duration span{
+    font-size: 14px;
+    color: #FF4A60;
+    font-weight: 600;
+}
+
+
+/* --------------------------------
+    media query starts from here 
+-----------------------------------*/
+
+@media only screen and (max-width: 688px) {
+    body{
+        width: 100%;
+    }
+    header{
+        height: 130px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo img{
+        width: 40.42px;
+        height: 51px;
+        margin-left: 0;
+    }
+    .profile{
+        margin-right: 30px;
+    }
+    
+    .container{
+        width: 100%;
+        align-items: center;
+    }
+    .top-players{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 29px;
+    }
+    .top-blogs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 26px;
+        margin-bottom: 42px;
+    }
+    .courses{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
